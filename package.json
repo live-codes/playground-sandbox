@@ -1,0 +1,17 @@
+{
+  "name": "@live-codes/playground-sandbox",
+  "version": "1.0.0",
+  "description": "A sandbox for safely running untrusted code in playgrounds",
+  "author": "Hatem Hosny",
+  "license": "MIT",
+  "keywords": [
+    "playground",
+    "untrusted",
+    "sandbox",
+    "livecodes"
+  ],
+  "private": false,
+  "repository": {
+    "url": "https://github.com/live-codes/playground-sandbox"
+  }
+}

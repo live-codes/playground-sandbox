@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script id="playground-sandbox-script">
+      window.addEventListener("message", function (ev) {
+        if (ev.source !== window.parent) return;
+        var html = ev.data.html;
+        if (html) {
+          document.write(html);
+          document.close();
+        }
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

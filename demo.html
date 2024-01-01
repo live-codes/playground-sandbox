@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const iframe = document.createElement("iframe");
+      iframe.onload = function () {
+        iframe.contentWindow.postMessage(
+          {
+            html: `
+    <h1>hello world!</h1>
+    I do not have access to the parent window except through \`postMessage\`.
+    `,
+          },
+          "*"
+        );
+      };
+      iframe.src = "./index.html";
+      document.body.appendChild(iframe);
+    </script>
+  </body>
+</html>
